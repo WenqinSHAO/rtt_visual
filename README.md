@@ -29,7 +29,7 @@ Once .csv files are ready, you can visualize the trace with [visual.py](./visual
 The script will produce an .html file and a .txt file with same file prefix.
 The usage of .txt file will be introduced in the next section.
 
-For example, to visualize the example trace [example/11017.csv](example/11017):
+For example, to visualize the example trace [example/11017.csv](example/11017.csv):
 ```
 $ python visual.py -f example/11017.csv
 ```
