@@ -1,5 +1,5 @@
 # What is it about?
-Tools that help visualize RTT traces and perform manual labeling.
+Visualization tool for RTT trace manual labeling. 
 
 # How to perform manual labeling with the these tools
 Example trace is given in the example folder.
