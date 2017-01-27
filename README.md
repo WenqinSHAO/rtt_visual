@@ -33,7 +33,7 @@ The resulted __.csv__ file will be stored in the same folder, and have same file
 
 ## Visualize trace
 Once .csv files are ready, you can visualize the trace with [visual.py](./visual.py).
-The script will produce an __.html__ file and a __.txt___ file with same file prefix.
+The script will produce an __.html__ file and a __.txt__ file with same file prefix.
 Open the produced __.html__ in your favorite web browser, you can zoom 
 and slide over the entire trace easily.
 Produced __.txt__ file is used to store indexes of label data and will be discussed in next section. 
