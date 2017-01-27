@@ -43,7 +43,7 @@ For example, to visualize the example trace [example/11017.csv](example/11017.cs
 $ python visual.py -f example/11017.csv
 ```
 
-The produced html look like the following:
+The produced __.html__ file shall look like the following in your browser:
 ![Interactive web page for RTT data inspection](example.png)
 
 I personally recommend using x-pan/pan and x-zoom to inspect the trace.
