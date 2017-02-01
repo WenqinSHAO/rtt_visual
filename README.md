@@ -7,10 +7,10 @@ Following instructions will be based on the example trace.
 
 ## The big picture
 
-* (Optional) Only for those who have __.xlsx__ as data file, [convert them to __.csv__](##convert-xlsx-to-csv);
-* (Optional, recommended) [Visualize data file](##visualize-trace) (__.csv__) in __.html__;
+* (Optional) Only for those who have __.xlsx__ as data file, [convert them to __.csv__](#convert-xlsx-to-csv);
+* (Optional, recommended) [Visualize data file](#visualize-trace) (__.csv__) in __.html__;
 * (Optional, personally preferred) note the index of datapoints to be labeld in __.txt__;
-* (__Required__) [Label data](##label-data) with the __cp__ column of __.csv__;
+* (__Required__) [Label data](#label-data) with the __cp__ column of __.csv__;
 for those who use an intermediate __.txt__ there is a script for this job;
 * (Optional, strongly recommended) [Check the labeled data](#check-labeling) visually with the __.html__. 
 
