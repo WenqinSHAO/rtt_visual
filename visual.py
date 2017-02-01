@@ -47,7 +47,8 @@ def plotter(file, verify):
     p.line(x, y, line_width=.5, alpha=.6)
     p.circle(x, y, size=5, color='olive', alpha=.8)
 
-    if len(cp) > 0:
+    # only plot the labeled data if required to
+    if len(cp) > 0 and verify:
         logging.info("%s labeled datapoint indexes are %s" % (trace_id, str(cp)))
         p.square_x([x[i] for i in cp], [y[i] for i in cp], color='red', fill_color=None, size=5)
 
