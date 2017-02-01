@@ -7,7 +7,7 @@ Following instructions will be based on the example trace.
 
 ## The big picture
 
-* (Optional) Only for those who have __.xlsx__ as data file, [convert them to __.csv__](#Convert-.xlsx-to-.csv);
+* (Optional) Only for those who have __.xlsx__ as data file, [convert them to __.csv__](##Convert-.xlsx-to-.csv);
 * (Optional, recommended) Visualize data file (__.csv__) in __.html__;
 * (Optional, personally preferred) note the index of datapoints to be labeld in __.txt__;
 * (__Required__) Flag the __cp__ column to __1__ in data file (__.csv__) for datapoints meant to be labeled;
