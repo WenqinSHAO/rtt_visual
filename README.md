@@ -7,12 +7,12 @@ Following instructions will be based on the example trace.
 
 ## The big picture
 
-* (Optional) Only for those who have __.xlsx__ as data file, [convert them to __.csv__](##convert-.xlsx-to-.csv);
-* (Optional, recommended) Visualize data file (__.csv__) in __.html__;
+* (Optional) Only for those who have __.xlsx__ as data file, [convert them to __.csv__](##convert-xlsx-to-csv);
+* (Optional, recommended) [Visualize data file](##visualize-trace) (__.csv__) in __.html__;
 * (Optional, personally preferred) note the index of datapoints to be labeld in __.txt__;
-* (__Required__) Flag the __cp__ column to __1__ in data file (__.csv__) for datapoints meant to be labeled;
+* (__Required__) [Label data](##label-data) with the __cp__ column of __.csv__;
 for those who use an intermediate __.txt__ there is a script for this job;
-* (Optional, strongly recommended) Check the labeled data visually with the __.html__. 
+* (Optional, strongly recommended) [Check the labeled data](#check-labeling) visually with the __.html__. 
 
 ## Install python packages
 In order to use these tools, please first install all the packages listed
@@ -62,20 +62,23 @@ As shown in the above screen shoot, when you hover the cursor over certain datap
 the pop-up window gives you detailed information of this datapoint, such as
 index, value, timestamps.
 
-Please label the trace by recording the datapoint index in
+Flag the __cp__ column in the data file (__.csv__) to __1__ for datapoints
+that you want to label.
+
+Author's personal preference is to record the datapoint index in
 the previously produced __.txt__ file.
 One index per line.
-Please check [example/11017.txt](example/11017.txt) for the exact format.
-
-## Check labeling
-Once you've finished labeling one trace, it is recommended to check the
-labeled datapoints in a visual way.
-
-First, use the [txt2csv.py](./txt2csv.py) to transcript the labeled data index
+See [example/11017.txt](example/11017.txt) for the exact format.
+Then use the [txt2csv.py](./txt2csv.py) to transcript the labeled data index
 into the csv file:
 ```
 $ python txt2csv.py -f example/11017.txt
 ```
+What a relief no longer the need to slide a file of thousands of lines.
+
+## Check labeling
+Once you've finished labeling one trace, it is recommended to check the
+labeled datapoints in a visual way.
 
 Then visualize the labeled data point along with original trace with:
 ```
