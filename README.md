@@ -5,6 +5,15 @@ Visualization tool for RTT trace manual labeling.
 Example trace is given in the example folder.
 Following instructions will be based on the example trace.
 
+## The big picture
+
+* (Optional) Only for those who have __.xlsx__ as data file, [convert them to __.csv__](#Convert-.xlsx-to-.csv);
+* (Optional, recommended) Visualize data file (__.csv__) in __.html__;
+* (Optional, personally preferred) note the index of datapoints to be labeld in __.txt__;
+* (__Required__) Flag the __cp__ column to __1__ in data file (__.csv__) for datapoints meant to be labeled;
+for those who use an intermediate __.txt__ there is a script for this job;
+* (Optional, strongly recommended) Check the labeled data visually with the __.html__. 
+
 ## Install python packages
 In order to use these tools, please first install all the packages listed
 in the [requirements.txt](./requirements.txt):
@@ -12,7 +21,7 @@ in the [requirements.txt](./requirements.txt):
 $ pip install -r requirements.txt
 ```
 
-## Convert to .xlsx to .csv
+## Convert .xlsx to .csv
 Some among you might have traces stored in .xlsx file.
 Please first convert it to .csv format using [xlsx2csv.py](./xlsx2csv.py).
 Some of the these .xlsx files might contain invalid or empty rows.
@@ -87,9 +96,9 @@ trace by trace.
 Still it is possible to generate and update __.html__ files in patch.
 ```
 $ python visual.py -d example/
-$ python visual.py -u -d example/
+$ python visual.py -v -d example/
 ```
-The above two commands treat all the __.csv__ files in the given directory.
+The above commands treat all the __.csv__ files in the given directory.
 
 
 
