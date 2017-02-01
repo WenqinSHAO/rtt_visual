@@ -61,15 +61,22 @@ Please check [example/11017.txt](example/11017.txt) for the exact format.
 ## Check labeling
 Once you've finished labeling one trace, it is recommended to check the
 labeled datapoints in a visual way.
-With the following command:
+
+First, use the [txt2csv.py](./txt2csv.py) to transcript the labeled data index
+into the csv file:
 ```
-$ python visual.py -u -f example/11017.csv
+$ python txt2csv.py -f example/11017.txt
 ```
-the __.html__ file will be updated (the __-u__ option) by integrating the indexes
-specified in the __.txt__.
+
+Then visualize the labeled data point along with original trace with:
+```
+$ python visual.py -v -f example/11017.csv
+```
+the __.html__ file will be updated (the __-verify__ option) by integrating the __cp__
+column in the __.csv__ file.
 Labeled data will be presented in red square as show in the previous screen shoot.
 
-(NOTE: __-u__/__--update__ option forces update. 
+(NOTE: __-v__/__--verify__ option forces the update of __.html__ file. 
 Without it, [visual.py](visual.py) will skip
 the __.csv__ files already having corresponding __.html__ file.)
 
