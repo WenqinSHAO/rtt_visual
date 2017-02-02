@@ -80,12 +80,12 @@ What a relief no longer the need to slide a file of thousands of lines.
 Once you've finished labeling one trace, it is recommended to check the
 labeled datapoints in a visual way.
 
-Then visualize the labeled data point along with original trace with:
+Visualize the labeled data point along with original trace with:
 ```
 $ python visual.py -v -f example/11017.csv
 ```
-the __.html__ file will be updated (the __-verify__ option) by integrating the __cp__
-column in the __.csv__ file.
+The __.html__ file will be updated (the __--verify__ option) by integrating the __cp__
+column of the __.csv__ file.
 Labeled data will be presented in red square as show in the previous screen shoot.
 
 (NOTE: __-v__/__--verify__ option forces the update of __.html__ file. 
@@ -93,10 +93,10 @@ Without it, [visual.py](visual.py) will skip
 the __.csv__ files already having corresponding __.html__ file.)
 
 
-## Patch operation
+## Batch operation
 It is recommended to perform labeling and then check the labeled datapoints 
 trace by trace.
-Still it is possible to generate and update __.html__ files in patch.
+Still it is possible to generate and update __.html__ files in batch.
 ```
 $ python visual.py -d example/
 $ python visual.py -v -d example/
