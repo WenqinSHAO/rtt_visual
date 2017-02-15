@@ -35,6 +35,8 @@ def plotter(file, verify):
     except (IOError, ValueError, TypeError, IndexError) as e:
         logging.critical("Encountered problem when reading initial csv: %r" % e)
         return
+    if type(trace['rtt'][0]) is str:
+        trace = pandas.read_csv(file, sep=';', decimal=',')
 
     p = figure(plot_width=1200, plot_height=600,
                tools="pan, xpan, ypan, xwheel_zoom, ywheel_zoom, undo, redo, reset, hover",
