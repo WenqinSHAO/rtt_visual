@@ -41,8 +41,10 @@ def plotter(file, verify):
     p = figure(plot_width=1200, plot_height=600,
                tools="pan, xpan, ypan, xwheel_zoom, ywheel_zoom, undo, redo, reset, hover",
                title=trace_id)
-
-    x = [tt.string_to_datetime(i) for i in trace['epoch']]
+    try:
+        x = [tt.string_to_datetime(i) for i in trace['epoch']]
+    except TypeError:
+        x = [tt.epoch_to_datetime(i) for i in trace['epoch']]
     y = trace['rtt']
     cp = [i for i, value in enumerate(trace['cp']) if value == 1]
 
